@@ -12,8 +12,8 @@ calc_anio = totalDias => {
     //por lo que un año tendria 360 dias ( 12 * 30 = 360 )
     anio += Math.floor( totalDias/360 );
     totalDias %= 360;
-    mes += Math.floor( totalDias/60 );
-    dia += totalDias%60;
+    mes += Math.floor( totalDias/30 );
+    dia += totalDias%30;
 
 
     if( dia > 30 ){
